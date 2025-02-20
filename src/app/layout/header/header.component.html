@@ -1,13 +1,9 @@
-<mat-toolbar color="primary">
-    <!-- Link po lewej -->
-    <a mat-button routerLink="/">Strona Główna</a>
-  
-    <span class="spacer"></span>
-  
-    <!-- Linki po prawej -->
-    <a mat-button (click)="navigateTo('s1')" >O nas</a>
-    <a mat-button (click)="navigateTo('s2')">Program</a>
-    <a mat-button (click)="navigateTo('s3')">Bilety</a>
-    <a mat-button (click)="navigateTo('s4')">Kontakt</a>
-    <a mat-button (click)="navigateTo('s5')">FAQ</a>
+<header>
+  <mat-toolbar color="primary">  
+    <button mat-icon-button (click)="navToggle()">
+      <mat-icon>menu</mat-icon>
+    </button>  
+    <span class="spacer"></span>   
+    <p>Text</p>
   </mat-toolbar>
+</header>
