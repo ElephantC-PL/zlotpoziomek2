@@ -5,9 +5,9 @@
     <span class="spacer"></span>
   
     <!-- Linki po prawej -->
-    <a mat-button [routerLink]="['/2025', 's1']">O nas</a>
-    <a mat-button [routerLink]="['/2025', 's2']">Program</a>
-    <a mat-button [routerLink]="['/2025', 's3']">Bilety</a>
-    <a mat-button [routerLink]="['/2025', 's4']">Kontakt</a>
-    <a mat-button [routerLink]="['/2025', 's5']">FAQ</a>
+    <a mat-button (click)="navigateTo('s1')" >O nas</a>
+    <a mat-button (click)="navigateTo('s2')">Program</a>
+    <a mat-button (click)="navigateTo('s3')">Bilety</a>
+    <a mat-button (click)="navigateTo('s4')">Kontakt</a>
+    <a mat-button (click)="navigateTo('s5')">FAQ</a>
   </mat-toolbar>

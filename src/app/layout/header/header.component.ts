@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { RouterModule } from '@angular/router';
+import { NavigationScrollService } from '../../shared/services/navigation-scroll/navigation-scroll.service';
 
 @Component({
   selector: 'zp-header',
@@ -11,5 +12,9 @@ import { RouterModule } from '@angular/router';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
+  private navigation = inject(NavigationScrollService);
 
+  navigateTo(id: string): void {
+    this.navigation.scrollTo(id);
+  }
 }
