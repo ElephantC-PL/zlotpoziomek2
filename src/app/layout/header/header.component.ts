@@ -2,7 +2,6 @@ import { Component, inject } from '@angular/core';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
-import { NavigationScrollService } from '../../shared/services/navigation-scroll/navigation-scroll.service';
 import { SideNavTriggerService } from '../../shared/services/side-nav-trigger/side-nav-trigger.service';
 
 @Component({
