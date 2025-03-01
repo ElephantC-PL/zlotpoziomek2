@@ -4,4 +4,15 @@ export enum EditionEnum {
     E2017 = '2017'   
 }
 
+export enum SectionEnum {   
+    HowToGet = 'Dojazd',
+    Accommodation = 'Nocleg',
+    Food = 'Wyżywienie',
+    Program = 'Program',
+    Routes = 'Trasy',
+    Registration = 'Rejestracja',
+    TShirt = 'Koszulka',
+    Contact = 'Kontakt',
+}
+
 export const IncomingEdition: EditionEnum = EditionEnum.E2025

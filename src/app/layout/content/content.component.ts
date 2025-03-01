@@ -1,6 +1,6 @@
 import { Component, computed, inject, Signal, signal, WritableSignal } from '@angular/core';
 import { DataService } from '../../shared/services/data/data.service';
-import { EditionEnum } from '../../data/global';
+import { EditionEnum, SectionEnum } from '../../data/global';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -13,6 +13,7 @@ import { ActivatedRoute } from '@angular/router';
 export class ContentComponent {
   private _data = inject(DataService);
   private route = inject(ActivatedRoute);
+  SectionEnum = SectionEnum;
 
   constructor() {   
     this.route.params.subscribe(params => {      

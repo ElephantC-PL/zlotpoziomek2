@@ -1,6 +1,20 @@
-<a mat-button (click)="navigateTo('s1')" >O nas</a>
-<a mat-button (click)="navigateTo('s2')">Program</a>
-<a mat-button (click)="navigateTo('s3')">Bilety</a>
-<a mat-button (click)="navigateTo('s4')">Kontakt</a>
-<a mat-button (click)="navigateTo('s5')">FAQ</a><br/>
-<zp-edition-selector/>
+<mat-nav-list class="linkList">
+    @for (section of $sections(); track section) {
+        <a class="listItem" mat-list-item (click)="navigateTo(section)">
+            {{ section }}
+        </a>
+    }    
+</mat-nav-list>
+<mat-divider/>
+<mat-list class="editionListHeader">
+    <mat-list-item class="listItem" role="listitem">Edycje</mat-list-item>
+</mat-list>
+<mat-nav-list class="linkList">  
+    @for (edition of $editions(); track edition) {
+        <a mat-list-item 
+            class="editionLink listItem"           
+            (click)="onEditionChange(edition)">
+            {{ edition }}
+        </a>
+    }
+</mat-nav-list> 

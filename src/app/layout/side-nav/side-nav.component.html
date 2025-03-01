@@ -1,13 +1,9 @@
 
 <mat-sidenav-container class="container">
-    <mat-sidenav (closedStart)="close()" fixedInViewport="true" mode="over" [opened]="visible()">
-        <div class="side-nav">
-            <ng-content select="left"></ng-content>
-        </div>       
+    <mat-sidenav class="side-nav" (closedStart)="close()" fixedInViewport="true" mode="over" [opened]="visible()">
+        <ng-content select="left"></ng-content>            
     </mat-sidenav>  
-    <mat-sidenav-content>   
-        <div class="content">
-            <ng-content select="middle"></ng-content>
-        </div>   
+    <mat-sidenav-content class="content">   
+        <ng-content select="middle"></ng-content>
     </mat-sidenav-content>  
 </mat-sidenav-container>

@@ -1,8 +1,0 @@
-<button mat-button [matMenuTriggerFor]="menu">Edycja: {{$selectedEdition()}}</button>
-<mat-menu #menu="matMenu">
-    @for(edition of $editions(); track edition){
-        <button mat-menu-item (click)="onEditionChange(edition)" disabled="{{edition == $selectedEdition()}}">
-            {{ edition }}
-        </button>   
-    }
-</mat-menu>
