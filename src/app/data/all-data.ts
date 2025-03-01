@@ -9,6 +9,6 @@ const e2025 = {
 }
 
 export const editionsMap = {
-    [EditionEnum.E2017]: e2017,
-    [EditionEnum.E2025]: e2025
+    2017: e2017,
+    2025: e2025
 };
