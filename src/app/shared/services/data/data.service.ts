@@ -7,9 +7,11 @@ import { editionsMap } from '../../../data/all-data';
 })
 export class DataService {
   $data: WritableSignal<any> = signal(null);
+  $edition: WritableSignal<EditionEnum> = signal(IncomingEdition);
 
   setDataByYear(edition?: EditionEnum): void {
     if(!edition) edition = IncomingEdition;
+    this.$edition.set(edition);
     const data = editionsMap[edition];
     if(data) this.$data.set(data);
   }

@@ -10,5 +10,6 @@ const e2025 = {
 
 export const editionsMap = {
     2017: e2017,
+    2024: {},
     2025: e2025
 };
